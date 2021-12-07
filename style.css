@@ -1,86 +1,66 @@
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
-h1{
+h1 {
   font-size: 50px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
+  color: aliceblue;
 }
 
-.experience-area{
-  background-image: url(images/exp-bg.png);
-  background-repeat: no-repeat;
-  background-position-y:70%;
-  margin-bottom: 200px;
+h3 {
+  color: azure;
 }
-.name-color{
-  color:orange;
+
+.name-color {
+  color: lightcoral;
 }
-.flexibale-container{
+.flexibale-container {
   display: flex;
-  margin-bottom: 10px;
 }
-.top-banner{
-  background-image: url(images/top-banner.png);
-  background-repeat: no-repeat;
-  background-position: cover;
+.top-banner {
+  background-color: #191c26;
 }
-.half-width{
+.half-width {
   width: 50%;
   padding: 5%;
 }
-.half-width img{
+.half-width img {
   width: 100%;
+  box-shadow: 0 0 14px 0 pink;
 }
-.link-button{
+.link-button {
   text-decoration: none;
-  background-image: linear-gradient(orange, tomato);
+  background-image: linear-gradient(rgb(255, 115, 115), rgb(255, 190, 190));
   padding: 10px 30px;
-  border-radius: 5%;
+  border-radius: 50px;
   font-weight: 700;
-  color: rgb(248, 244, 244);
+  color: black;
   text-transform: uppercase;
 }
-.caption{
-  color: rgb(116, 116, 116);
-  margin-bottom:20px;
-  text-align: justify;
+
+.link-button:hover {
+  box-shadow: 0px 0px 13px 0px wheat;
+  color: white;
 }
-.second-head{
-  margin-bottom:20px;
+
+footer {
+  background-color: #111319;
+  padding: 20px 0;
 }
-.dream-big{
-  background-image: url(images/dream-bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-.experience-area h1{
-  text-align: center;
-}
-.experience-item{
-  width: 40%;
-  height: 400px;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-left:3%;
-  border-radius: 2%;
-  box-shadow: 1px 6px 70px 10px grey;
-}
-.experience-item h2{
-  font-size: 45px;
-}
-#border-item-orange{
-  border-left: 7px solid ;
-  border-image: linear-gradient(rgb(255, 51, 1), rgba(233, 185, 96, 0.979));
-  border-image-slice: 1;
-}
-#border-item{
-  border-left: 7px solid;
-  border-image: linear-gradient(blue, cyan);
-  border-image-slice: 1;
-}
-#footer-edit{
+#footer-edit {
   text-align: center;
   font-size: 18px;
   color: gray;
+}
+/* resposive design */
+
+@media screen and (max-width: 480px) {
+  .flexibale-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .half-width h1 {
+    font-size: 40px;
+  }
 }
