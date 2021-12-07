@@ -10,6 +10,7 @@ h1 {
 
 h3 {
   color: azure;
+  padding-bottom: 10px;
 }
 
 .name-color {
@@ -17,6 +18,7 @@ h3 {
 }
 .flexibale-container {
   display: flex;
+  padding-bottom: 30px;
 }
 .top-banner {
   background-color: #191c26;
